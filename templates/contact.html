@@ -4,10 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/about.css'%}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
+
+    <style>
+        p{
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+    </style>
+
+
 </head>
+
 <body>
+    
+    <div class="navbar">
+        <div class="ul">
+            <ul><a href="{% url 'index'%}">Home</a></ul>
+            <ul><a href="{% url 'about'%}">About</a></ul>
+            <ul><a href="{% url 'contact'%}">Contact</a></ul>
+            <ul><a href="/services">Services</a></ul>
+        </div>
+    </div>
+
     <h1>Contact us</h1>
+
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas aliquid maxime recusandae dolor doloremque ex nobis eius laborum sed, neque, id illo aliquam commodi, fuga ut necessitatibus tempora sint dignissimos?
     Quisquam voluptatum quo laboriosam blanditiis tempore. Animi, illum iusto atque incidunt nostrum similique deleniti doloremque quasi, fuga quibusdam necessitatibus sunt suscipit asperiores ullam blanditiis omnis tempora tempore odit amet explicabo.</p>
+
+      <table class="table ">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Message</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>18</td>
+            <td>Can you deliver a fridge in any part of the country</td>
+        </tr>
+         <tr>
+            <td>Hannah</td>
+            <td>18</td>
+            <td>Can you deliver a fridge in any part of the country</td>
+        </tr>
+         <tr>
+            <td>Grace</td>
+            <td>18</td>
+            <td>Can you deliver a fridge in any part of the country</td>
+        </tr>
+    
+        
+
+    </table>
 </body>
 </html>

@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/about.css'%}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
 </head>
 <body>
-    <h1>About Us</h1>
+
+    <div class="navbar">
+        <div class="ul">
+            <ul><a href="{% url 'index'%}">Home</a></ul>
+            <ul><a href="{% url 'about'%}">About</a></ul>
+            <ul><a href="{% url 'contact'%}">Contact</a></ul>
+            <ul><a href="/services">Services</a></ul>
+        </div>
+    </div>
+
+      <h1>About Us</h1>
+      
+    <img src="{% static 'images\perfume.png'%}" alt="">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro alias adipisci qui vero enim soluta quisquam in officia eos, eius, pariatur accusamus blanditiis ipsa nemo similique non magni expedita dolore.
     Pariatur possimus tempora sed quibusdam ex harum suscipit, molestias exercitationem ratione ea sunt provident quasi reprehenderit molestiae nobis hic aliquid adipisci, amet eos laudantium illum voluptatibus. Quasi sapiente debitis non.
     Est aliquid nesciunt dolores eveniet, quibusdam hic fugiat repellendus voluptatem corrupti qui at excepturi, recusandae, optio dolor ratione repudiandae velit provident quam minima nam labore cupiditate voluptatibus porro similique! Quas?</p>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/about.css'%}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
+    
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="ul">
+            <ul><a href="{% url 'index'%}">Home</a></ul>
+            <ul><a href="{% url 'about'%}">About</a></ul>
+            <ul><a href="{% url 'contact'%}">Contact</a></ul>
+            <ul><a href="/services">Services</a></ul>
+        </div>
+    </div>
+
+    <h1>View Our Services</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequuntur eligendi minus repellendus laborum iste ratione cupiditate molestiae porro, voluptates hic quam aperiam earum neque quasi vero quaerat deserunt molestias.
+    Ipsum deleniti eius excepturi recusandae accusamus, distinctio corporis quas placeat quasi culpa sed praesentium odio aut sapiente enim consequuntur repellat. Ut iusto reprehenderit minima recusandae sequi maiores accusamus unde libero!
+    Inventore nihil iusto atque sit nulla, dolorum voluptate, illum, porro cum unde assumenda debitis quos! Corrupti, rerum autem? Totam perferendis minus velit doloribus quaerat incidunt animi. Omnis atque laborum dolorum.</p>
+</body>
+</html>

@@ -3,13 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=h, initial-scale=1.0">
+
+    {% load static %} 
+
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.css'%}"></script>
+
+    <!--ginger symbol, used to use the contents in the satic folder -->
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+
+        img{
+            width: 250px;
+            height: 250px;
+            margin-left: 400px;
+        }
+
+    </style>
+
 </head>
 <body>
-    <h1>Welcome to Shopella</h1>
+
+    <div class="navbar">
+        <div class="ul">
+            <ul><a href="{% url 'index'%}">Home</a></ul>
+            <ul><a href="{% url 'about'%}">About</a></ul>
+            <ul><a href="{% url 'contact'%}">Contact</a></ul>
+            <ul><a href="/services">Services</a></ul>
+        </div>
+    </div>
+
+    <h1 style="text-align: center;">Welcome to Shopella</h1>
+
+    <img src="{% static 'images\perfume.png'%}" alt="">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, pariatur id fugit est quisquam sit tempora. Ex magni alias error accusamus totam voluptatibus in facilis temporibus? Eveniet nemo ut ipsam!
     Dolor repellat hic dolorem quis expedita necessitatibus quas, quibusdam iure laudantium nostrum vel? Id totam sequi animi dignissimos, doloribus ad dolore deleniti ipsa incidunt, voluptas maiores nisi itaque corporis perferendis?
     Alias dolorem ipsam minus odit ad a tempora harum autem deleniti velit quisquam aliquam quaerat similique voluptate ullam consectetur explicabo perspiciatis hic tenetur possimus, aut doloribus placeat est. Eius, quo?</p>
     <button>view more</button>
+
+    <header class="text-warning">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus sapiente animi iure quis soluta hic, eveniet, unde nobis velit rerum, nemo minus mollitia? Enim maxime quasi facere cupiditate dolorem voluptatibus.
+    Ad obcaecati necessitatibus nostrum, dolore vel blanditiis ipsum consequatur eius. Est dolores itaque ab consequuntur reiciendis animi sed velit, ullam cupiditate atque omnis voluptas minus odio commodi sint temporibus ratione!</header>
+
+    <table class="table ">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>18</td>
+            <td>Computer Science</td>
+        </tr>
+         <tr>
+            <td>Hannah</td>
+            <td>18</td>
+            <td>Computer Science</td>
+        </tr>
+         <tr>
+            <td>Grace</td>
+            <td>18</td>
+            <td>Computer Science</td>
+        </tr>
+    
+        
+
+    </table>
 </body>
 </html>
